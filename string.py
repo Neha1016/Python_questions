@@ -88,3 +88,125 @@ for i in j :
 k = input("Enter a string :")
 
 print(k.lower())
+
+
+
+# Remove Duplicate character 
+
+l = input("Enter a string :")
+
+result = ""
+
+for i in l :
+    if i not in result :
+        result += i
+
+print(result )
+
+# First Non - Repeating Character 
+
+
+m = input("Enter a string :")
+
+for i in m :
+    if m.count(i)==1:
+        print("First non - repeating character :" , i)
+        break 
+    
+
+# Longest Word 
+
+n = input("Enter a sentence :")
+
+words = n.split()
+
+longest = ""
+
+for i in words :
+    if len(i) > len(longest):
+        longest = i
+print("Longest word :", longest)
+
+
+# Check Substring 
+
+o = input("Enter main string  :")
+o_sub= input("Enter substring  :")
+
+if o_sub in o :
+    print("substring found")
+    
+else:
+    print("Substing not found ")
+    
+    
+# String Compression
+
+p = input("Enter a string  :")
+
+result = ""
+count = 1 
+
+for i in range(len(p)-1):
+    if p[i] == p[i + 1]:
+        count +=1
+    else:
+        result += p[i] + str(count)
+        count = 1
+        
+result += p[-1] + str (count)
+
+print(result )
+
+
+# Reverse Words 
+
+q = input("Enter a sentence:")
+
+words = q.split()
+
+print(" ".join(words[::-1]))
+
+
+# Remove Special Chracters
+
+r = input("Enter a string  :")
+
+result = ""
+
+for i in r :
+    if i.isalnum() or i == "":
+        result += i
+        
+print(result)
+
+
+# Capatalize First letter of each word
+
+t = input("Enter a sentence  :")
+
+print(t.title())
+
+
+# ASCII values of characters 
+
+u = input("Enter a string  :")
+
+for i in u :
+    print(i , "=", ord(i))
+    
+    
+# String Rotation 
+
+v = input("Enter a string  :")
+
+w = int(input("Enter rotation  :"))
+
+w = w % len(v)
+
+result = v[w:] + v[:w]
+
+print(result )
+
+
+
