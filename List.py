@@ -117,3 +117,16 @@ for i in sum :
     
 print("Sum = " , total )
 
+
+# Average Of List 
+
+list = [10,20,30,40,50]
+
+total = 0 
+
+for i in list :
+    total += i
+    
+average = total/len(list)
+
+print("Average = " , average )
