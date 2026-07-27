@@ -130,3 +130,31 @@ for i in list :
 average = total/len(list)
 
 print("Average = " , average )
+
+
+# Maximum And Minimum
+
+max_min = [10,20,30,40,50]
+
+print("Maximum =" , max(max_min))
+print("Minimum =" , min(max_min))
+
+# Reverse List 
+
+list_reverse = [1,2,3,4,5]
+
+print(list_reverse[::-1])
+
+# Even or Odd Number In List 
+
+even_odd = [ 10 , 20 , 40 , 43 , 33 ]
+
+print("Even Numbers :")
+for i in even_odd:
+    if i % 2 == 0 :
+        print(i)
+        
+print("Odd Numbers :")
+for i in even_odd:
+    if i % 2 != 0:
+        print(i)
