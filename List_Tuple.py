@@ -158,3 +158,69 @@ print("Odd Numbers :")
 for i in even_odd:
     if i % 2 != 0:
         print(i)
+        
+ 
+# Postive Or Negetive 
+
+p_n = [10, 3 , -2 ,0,  -4 , 5]
+
+for i in p_n:
+    if i > 0:
+        print("Positive :", i)
+    elif i < 0:
+        print("Negative :", i)      
+    else:
+        print("Zero :", i)  
+        
+# Flatten Nested List
+
+n_l = [[1,2], [3,4],[5,6]]
+
+result = []
+
+for i in n_l:
+    for j in i :
+        result.append(j)
+        
+print(result)
+
+
+# Remove element 
+
+remove_element = [10,20,30,40,50]
+
+x = int(input("Enter element to remove :"))
+
+remove_element.remove(x)
+
+print(remove_element)
+
+# Search element
+
+search_element = [10,20,30,50,22]
+z = int(input("Enter element to remove :"))
+
+if z in search_element:
+    print("Element Found")
+else:
+    print("Element Not Found")
+    
+# List Comprehension
+
+l_comprehension = [2 , 4 , 6 , 1 , 7 ]
+
+square = [i*i for i in l_comprehension]
+
+print(square)
+
+
+# Tuple Operations 
+
+t = (10 , 11 , 12 , 13 ,14 )
+
+print("Tuple = ", t)
+print("Length = " , len(t))
+print("First Element = " ,t[0])
+print("Last Element = " , t[-1])
+print("Count pf 20  = " , t.count(10))
+print("Index of 30 = " , t.index(13))
