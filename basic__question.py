@@ -2,6 +2,99 @@
 
 print('Hello World')
 
+# Variable Assignment
+
+var = 10 
+var1 = "Hello"
+var2 = 2.22
+
+print(var)
+print(var1)
+print(var2)
+
+# Data Types 
+
+data_type1 = 15
+data_type2 = "Python"
+data_type3 = 4.22
+data_type4 = True
+data_type5 = [1,2,3,4,5]
+data_type6 = (10,20,30,40,50)
+data_type7 = {11,22,33,44,55}
+data_type8 = {"a":1, "b":2, "c":3}
+data_type9 = None
+data_type10 = complex(2,3)
+data_type11 = bytes(5)
+data_type12 = bytearray(5)
+
+print(type(data_type1))
+print(type(data_type2))
+print(type(data_type3))
+print(type(data_type4))
+print(type(data_type5))
+print(type(data_type6))
+print(type(data_type7))
+print(type(data_type8))
+print(type(data_type9))
+print(type(data_type10))
+print(type(data_type11))
+print(type(data_type12))
+
+# Input and Output 
+
+input_name = input("Enter your name :")
+input_age = input("Enter your age :")
+
+print(f"Hello {input_name}, you are {input_age} years old.")
+print("Hello " + input_name + ", you are " + input_age + " years old.")
+print("Hello {}, you are {} years old.".format(input_name, input_age))
+print("Hello %s, you are %s years old." % (input_name, input_age))
+print("Hello {0}, you are {1} years old.".format(input_name, input_age))
+print("Hello {name}, you are {age} years old.".format(name=input_name, age=input_age))
+print("Name = " , input_name)
+print("Age = " , input_age)
+
+# Operators 
+
+op1 = 10 
+op2 = 5
+
+print("Addition = " , op1 + op2)
+print("Subtraction = " , op1 - op2)
+print("Multiplication = " , op1 * op2)
+print("Division = " , op1 / op2)
+print("Floor Division = " , op1 // op2)
+print("Modulus = " , op1 % op2)
+print("Exponentiation = " , op1 ** op2)
+print("Greater than = " , op1 > op2)
+print("Less than = " , op1 < op2)
+
+# Type Casting 
+
+type_cast1 = int(3.14)
+type_cast2 = float(10)
+type_cast3 = str(2.22)
+type_cast4 = bool(1)
+t_p = "101"
+t_p1 = int(t_p)
+
+print(type(t_p))
+print(type(t_p1))
+print(t_p1 + 50)
+print(type_cast1)
+print(type_cast2)
+print(type_cast3)
+
+# Comments 
+
+# This is a single line comment
+
+print("This is a single line comment")
+
+# This is a multi-line comment
+
+print("This is a multi-line comment")
+
 # 2 Add Two Numbers 
 
 a = 10 
