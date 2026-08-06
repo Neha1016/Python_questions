@@ -1,3 +1,70 @@
+# String Operations in Python
+
+s1 = "Hello"
+s2 = " Virat Kohli "
+
+print("Concatenation:" , s1 + " " + s2 )
+print("Repetition:" , s1 * 3)
+print("Length of string:" , len(s1 ), len(s2))
+print("Strip:" , s2.strip())
+print("Find:" , s2.find("Kohli"))
+print("Membership :" , "V" in s2 , "H" in s2)
+
+
+# String Slicing
+
+string = "Python Programming"
+
+print(string[0:6])
+print(string[0])
+print(string[-1])
+print(string[1:4])
+print(string[::2])
+print(string[::-1])
+print(string[::3])
+print(string[5:0:-1])
+print(string[5:0:-2])
+print(string[2::])
+print(string[2:10:2])
+print(string[10:2:-1])
+
+
+# string Methods 
+
+s_methods = "Hello Coder"
+print(s_methods.upper())
+print(s_methods.lower())
+print(s_methods.title())
+print(s_methods.capitalize())
+print(s_methods.count("o"))
+print(s_methods.replace("Coder", "Programmer"))
+print(s_methods.split())
+print(s_methods.find("Coder"))
+print(s_methods.startswith("Hello"))
+print(s_methods.endswith("Coder"))
+
+
+# String Palindrome
+
+s_palindrome = "madam"
+
+if s_palindrome == s_palindrome[::-1]:
+    print("Palindrome")
+else:
+    print("Not palindrome")
+    
+    
+# Anagram Check 
+
+s_anagram1 = input("Enter first string:")
+s_anagram2 = input("Enter second string:")
+
+if sorted(s_anagram1) == sorted(s_anagram2):
+    print("Anagram")
+else:
+    print("Not Anagram")
+
+
 # Reverse a string 
 
 a = input("Enter a string :")
