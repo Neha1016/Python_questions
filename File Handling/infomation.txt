@@ -1,0 +1,20 @@
+
+# 'r' = Read existing file
+
+# 'w' = Write data and over write existing content
+
+# 'a' = Add data at the end of the file
+
+# read() = Read complete file 
+
+# readline() = Read one line
+
+# readlines() = Read all lines as a list 
+
+# write() = Write data into file
+
+# close() = Close the file 
+
+# try = Code that may cause an error
+
+# except = Handles the error 
